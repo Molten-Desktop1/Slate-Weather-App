@@ -1,0 +1,123 @@
+/*Imports*/
+@import url('https://v1.fontapi.ir/css/SFProDisplay');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Regular Styles*/
+.LargeTitle {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.374px;
+    color: #FFFFFF;
+}
+.Title1 {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.364px;
+    color: #FFFFFF;
+}
+.Title2 {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+}
+.Title3 {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.38px;
+    color: #FFFFFF;
+}
+.Headline {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+}
+.Body {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+}
+.Callout {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.32px;
+    color: #FFFFFF;
+}
+.Subheadline {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+}
+.Footnote {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.078px;
+    color: #FFFFFF;
+}
+.Caption1 {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Caption2 {
+    font-family: 'SF Pro Display','Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.066px;
+    color: #FFFFFF;
+}
+/*Bold Styles*/
+.LargeTitle.Bold,.Title1.Bold {
+    font-weight: 700;
+}
+.Title2.Bold,.Title3.Bold,.Headline.Bold,.Body.Bold,.Callout.Bold,.Subheadline.Bold,.Footnote.Bold,.Caption2.Bold {
+    font-weight: 600;
+}
+.Caption1.Bold {
+    font-weight: 500;
+}
