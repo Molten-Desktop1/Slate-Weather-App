@@ -10,14 +10,15 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 body {
     background: linear-gradient(90deg, #5936B4 0%, #362A84 103.55%);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 h1.location {
     font-family: 'SF Pro Display', 'Roboto';
@@ -86,13 +87,9 @@ h3.highLow {
     margin-top: 0px;
 }
 div.mainMenu {
-    position: absolute;
-    top: auto;
-    bottom: 0px;
     background: linear-gradient(90deg, #427BD1 1.95%, #C159EC 101.56%);
     width: 100%;
     height: auto;
-    opacity: 0.85;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -213,4 +210,11 @@ img.icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+div.additional {
+    border-top: solid 3px #FFFFFF;
+    background: #48319D;
+}
+div.current {
+    margin-bottom: 200px;
 }

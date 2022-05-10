@@ -1,3 +1,30 @@
+function additionalInfo() {
+    const url = "https://api.openweathermap.org/data/2.5/onecall?lat=-37.86&lon=145.06&appid=3fa7cb558fc67ebedad0b21a677dbaf0&units=metric";
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        var timezone = `${data.timezone}`
+        var feelsLike = `${data.current.feels_like}`;
+        var pressure = `${data.current.pressure}`;
+        var humidity = `${data.current.humidity}`;
+        var clouds =`${data.current.clouds}`;
+        var UV = `${data.current.uvi}`;
+        var visibility = `${data.current.visibility}`;
+        var windSpeed = `${data.current.wind_speed}`;
+
+        document.querySelector("body > div.mainMenu > div.additional").innerHTML = `
+        <h2 class="Title1 Bold">Additional Information</h2>
+        <h4 class="Subheadline Left">Timezone: ${timezone}</h4>
+        <h4 class="Subheadline Left">Feels Like: ${feelsLike}</h4>
+        <h4 class="Subheadline Left">Pressure: ${pressure}</h4>
+        <h4 class="Subheadline Left">Humidity: ${humidity}</h4>
+        <h4 class="Subheadline Left">Clouds: ${clouds}</h4>
+        <h4 class="Subheadline Left">UV Index: ${UV}</h4>
+        <h4 class="Subheadline Left">Visibility: ${visibility}</h4>
+        <h4 class="Subheadline Left">Wind Speed: ${windSpeed}</h4>
+        `
+    });
+}
 function refresh() {
     const apiKey = "3fa7cb558fc67ebedad0b21a677dbaf0";
     const lat = "-37.81"
@@ -51,6 +78,9 @@ function refresh() {
             <div class="block n23"></div>
             <div class="block n24"></div>
             <div class="block n25"></div>
+        </div>
+        <div class="additional">
+        
         </div>
     `;
 
@@ -328,6 +358,7 @@ function refresh() {
             <h5 class="temp">${hour10temp}&deg;</h5>
         `
     });
+    additionalInfo()
 };
 
 function toWeekly() {
@@ -364,6 +395,9 @@ function toWeekly() {
             <div class="block n23"></div>
             <div class="block n24"></div>
             <div class="block n25"></div>
+        </div>
+        <div class="additional">
+        
         </div>
     `;
         var currentDay = "now";
@@ -588,4 +622,5 @@ function toWeekly() {
         document.querySelector("body > div.mainMenu > div.scrollable > div.block.n10").innerHTML = null;
         document.querySelector("body > div.mainMenu > div.scrollable > div.block.n11").innerHTML = null;
     });
+    additionalInfo()
 }

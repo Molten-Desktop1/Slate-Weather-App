@@ -7,6 +7,7 @@
     <title>Sebastian's Weather App</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./textStyles.css">
     <link rel="icon" type="image/svg" sizes="225x225" href="./img/download.png">
 </head>
 <body onload="refresh()">
@@ -17,7 +18,6 @@
         <h3 class="description">Mostly Clear</h3>
         <h3 class="highLow"><span class="high">H:24&deg;</span><span class="low">L:15&deg;</span></h3>
     </div>
-    <img src="./img/House.svg" alt="" class="hero">
     <div class="mainMenu">
         <button class="Expand" onclick="Expand">-</button>
         <button class="toggle" onclick="toWeekly()">Weekly</button>
@@ -49,7 +49,9 @@
             <div class="block n24"></div>
             <div class="block n25"></div>
         </div>
+        <div class="additional">
         
+        </div>
     </div>
 </body>
 </html>

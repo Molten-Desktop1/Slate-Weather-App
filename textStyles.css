@@ -121,3 +121,6 @@
 .Caption1.Bold {
     font-weight: 500;
 }
+.Left {
+    text-align: left;
+}
